@@ -1,8 +1,3 @@
-/*Trisha Andres                                                                                                                                                                          
-CPSC 1071: Section 2                                                                                                                                                                     
-Group: C--                                                                                                                                                                               
-04/16/2023*/
-
 #include "LinkedList.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -19,7 +14,7 @@ struct node* makeList(void) {
   do {
     printf("Enter a word or phrase, or -99 to end: ");
     fgets(readIn, sizeof(readIn), stdin);
-    readIn[strcspn(readIn, "\n")] = '\0';//found on c++ website 
+    readIn[strcspn(readIn, "\n")] = '\0';
 
     if(strcmp(readIn, "-99") == 0) //just used as a default basically
       {
